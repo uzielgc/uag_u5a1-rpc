@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package grpc;
+
+message Empty {}
+
+message Move {
+    string player = 1;
+    string x = 2;
+    string y = 3;
+}
+
+service GatoServer {
+    // This bi-directional stream makes, allow to send and receive
+    rpc RecordMove (Empty) returns (stream Move);
+    rpc MakeMove (Move) returns (Empty);
+}
