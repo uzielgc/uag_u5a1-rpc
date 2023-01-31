@@ -55,10 +55,10 @@ Para reinicar presione espacio. El turno pasará al siguiente jugador.
 ### Validación/Uso (versión RPC)
 
 Correr server:
-    `python src/server.py -s`
+    `python src_rpc/rpc_server.py `
 
 Correr cliente:
-    `python src/client.py`
+    `python src_rpc/rpc_client.py [-s]`
 
 ### Output:
 
